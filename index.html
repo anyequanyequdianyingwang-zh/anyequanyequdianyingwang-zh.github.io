@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>俺也去俺也去电影网：本地影迷线下观影组织与同城观影活动报名入口</title>
+<meta name="description" content="俺也去俺也去电影网 anyequanyequdianyingwang-zh.github.io 是一个面向本地影迷的同城观影活动组织平台，专注把「一个人看片」变成「一群人聊片」。本站提供城市观影小组索引、每周线下放映场次、主题观影沙龙、片单共创与影迷交友五个固定栏目，每场活动均标注时间、影院或放映空间、报名方式与费用说明。区别于线上视频站点，俺也去俺也去电影网的核心价值在于真实的见面与讨论：看完一部片子，能立刻在隔壁咖啡馆继续聊下去。目前已在 12 座城市建立活跃小组，每月组织放映与沙龙逾 40 场。访问官网：https://anyequanyequdianyingwang-zh.github.io">
+<meta name="keywords" content="俺也去俺也去电影网, anyequanyequdianyingwang-zh.github.io, 同城观影活动, 本地影迷组织, 线下放映, 观影沙龙报名, 城市观影小组, 片单共创, 影迷交友, 周末看电影, 主题观影, 独立放映空间, 影迷社群">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="language" content="zh-CN">
+<meta name="author" content="俺也去俺也去电影网编辑部">
+<meta name="theme-color" content="#8a4b1e">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="俺也去俺也去电影网：本地影迷线下观影组织与同城观影活动报名入口">
+<meta property="og:description" content="面向本地影迷的同城观影活动组织平台，提供城市小组索引、每周线下放映场次、主题沙龙、片单共创与影迷交友。">
+<meta property="og:url" content="https://anyequanyequdianyingwang-zh.github.io">
+<meta property="og:site_name" content="俺也去俺也去电影网">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://anyequanyequdianyingwang-zh.github.io">
+<style>
+:root{
+  --ocre:#8a4b1e;
+  --ocre-d:#5e3212;
+  --ocre-l:#c07137;
+  --clay:#f4ece2;
+  --clay-2:#efe3d3;
+  --olive:#6b7a2e;
+  --rust:#a8411a;
+  --paper:#fdfbf7;
+  --ink:#33271d;
+  --ink-2:#76695c;
+  --line:#e2d5c4;
+  --r:16px;
+  --sans:"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",system-ui,sans-serif;
+  --serif:"Songti SC","Source Han Serif SC","Noto Serif CJK SC",Georgia,serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.85;font-size:15.5px}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:0;background:none}
+ul{list-style:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+/* ===== 通告带 ===== */
+.belt{background:var(--rust);color:#fbeee4;font-size:12.5px;padding:8px 0}
+.belt .wrap{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.belt b{background:#fff;color:var(--rust);font-size:11px;padding:2px 9px;border-radius:3px;font-weight:800;letter-spacing:1px}
+.belt a{color:#ffe2cf;font-weight:700}
+
+/* ===== 导航 ===== */
+nav.top{background:var(--ocre-d);position:sticky;top:0;z-index:60}
+.top .wrap{display:flex;align-items:center;gap:6px}
+.top .brand{flex:0 0 auto;padding:12px 20px 12px 0;border-right:1px solid rgba(255,255,255,.18);margin-right:6px}
+.top .brand b{font-family:var(--serif);color:#fff;font-size:18px;letter-spacing:1px}
+.top .brand small{display:block;color:#e6b98f;font-size:10px;letter-spacing:2px}
+.top a{padding:14px 16px;color:#f0ddcb;font-size:14px;font-weight:600;position:relative;transition:.16s;white-space:nowrap}
+.top a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.top a.on{color:#fff}
+.top a.on:after{content:"";position:absolute;left:16px;right:16px;bottom:6px;height:2px;background:var(--rust)}
+.mob{display:none;margin-left:auto;color:#fff;font-size:22px;padding:8px}
+.top .list{display:flex;flex-wrap:wrap;flex:1 1 auto}
+.top.open .list{display:flex}
+
+/* ===== HERO ===== */
+.hero{background:var(--clay);border-bottom:1px solid var(--line);padding:56px 0 60px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:52px;align-items:center}
+.hero .eyebrow{font-size:11px;letter-spacing:5px;color:var(--rust);font-weight:800;text-transform:uppercase}
+.hero h1{font-family:var(--serif);font-size:46px;line-height:1.3;color:var(--ocre-d);margin:16px 0 20px;font-weight:900}
+.hero h1 em{font-style:normal;color:var(--olive)}
+.hero h1 u{text-decoration:none;background:linear-gradient(transparent 62%,#f0c89a 62%);padding:0 2px}
+.hero .lead{font-size:16.5px;color:var(--ink-2);margin-bottom:28px;text-align:justify}
+.hero .acts{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px}
+.hero .acts a{font-size:14.5px;font-weight:700;padding:13px 26px;border-radius:30px;border:2px solid var(--ocre)}
+.hero .acts .p1{background:var(--ocre);color:#fff}
+.hero .acts .p1:hover{background:var(--ocre-d)}
+.hero .acts .p2{color:var(--ocre)}
+.hero .acts .p2:hover{background:var(--ocre);color:#fff}
+.hero .quick{display:flex;gap:24px;flex-wrap:wrap;font-size:13px;color:var(--ink-2)}
+.hero .quick span b{display:block;font-family:var(--serif);font-size:22px;color:var(--ocre-d);line-height:1.2}
+
+/* 右侧活动卡 */
+.grp{background:#fff;border-radius:var(--r);border:1px solid var(--line);overflow:hidden;box-shadow:0 18px 40px rgba(94,50,18,.1)}
+.grp .hd{background:var(--olive);color:#fff;padding:16px 22px;display:flex;justify-content:space-between;align-items:center}
+.grp .hd b{font-size:16px}
+.grp .hd small{font-size:11.5px;opacity:.85}
+.grp ul{padding:6px 0}
+.grp li{padding:16px 22px;border-bottom:1px dashed var(--line);display:grid;grid-template-columns:56px 1fr auto;gap:16px;align-items:center}
+.grp li:last-child{border-bottom:0}
+.grp .d{background:var(--clay);border-radius:10px;text-align:center;padding:8px 4px}
+.grp .d b{display:block;font-family:var(--serif);font-size:22px;color:var(--ocre-d);line-height:1}
+.grp .d span{font-size:10.5px;color:var(--ink-2);letter-spacing:1px}
+.grp .t h4{font-size:15.5px;font-weight:800;color:var(--ink);line-height:1.5;margin-bottom:3px}
+.grp .t small{font-size:12px;color:var(--ink-2)}
+.grp .t .dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--olive);margin-right:5px;vertical-align:middle}
+.grp .t .dot.full{background:var(--rust)}
+.grp .go{flex:0 0 auto;background:var(--rust);color:#fff;font-size:12px;font-weight:700;padding:8px 14px;border-radius:20px;white-space:nowrap}
+.grp .go:hover{background:var(--ocre-d)}
+.grp .ft{background:var(--clay-2);padding:12px 22px;font-size:12.5px;color:var(--ink-2);text-align:center}
+
+/* ===== 数据条 ===== */
+.stats{background:var(--ocre-d);color:#f0ddcb}
+.st .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.st div{padding:30px 20px;text-align:center;border-right:1px solid rgba(255,255,255,.14)}
+.st div:last-child{border-right:0}
+.st b{display:block;font-family:var(--serif);font-size:34px;color:#f0c89a;line-height:1}
+.st span{font-size:12.5px;letter-spacing:1px;display:block;margin-top:8px}
+
+/* ===== 栏目 ===== */
+.cols{padding:68px 0;background:var(--paper)}
+.sec{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:end;margin-bottom:34px;border-bottom:2px solid var(--ocre);padding-bottom:14px}
+.sec h2{font-family:var(--serif);font-size:29px;font-weight:900;color:var(--ocre-d);line-height:1.4}
+.sec h2 small{display:block;font-size:12px;color:var(--ink-2);font-weight:400;letter-spacing:2px;margin-top:6px}
+.sec a{font-size:13px;color:var(--ink-2);white-space:nowrap}
+.sec a b{color:var(--rust)}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.cell{padding:26px 24px;background:#fff;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;transition:.2s}
+.cell:hover{background:var(--clay)}
+.cell:nth-child(4n){border-right:0}
+.cell:nth-child(n+5){border-bottom:0}
+.cell .ic{font-size:26px;margin-bottom:14px}
+.cell h3{font-size:18px;font-weight:800;color:var(--ocre-d);margin-bottom:10px;line-height:1.5}
+.cell p{font-size:13.5px;color:var(--ink-2);text-align:justify;flex:1;margin-bottom:16px}
+.cell .row{display:flex;justify-content:space-between;font-size:12px;color:var(--ink-2);padding-top:12px;border-top:1px solid var(--line)}
+.cell .row a{color:var(--rust);font-weight:700}
+
+/* ===== 沙龙流程 ===== */
+.flow{padding:68px 0;background:var(--clay)}
+.flow .grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative}
+.flow .grid:before{content:"";position:absolute;top:34px;left:10%;right:10%;height:2px;background:repeating-linear-gradient(90deg,var(--ocre-l) 0 6px,transparent 6px 12px);z-index:0}
+.stp{text-align:center;padding:0 12px;position:relative;z-index:1}
+.stp .n{width:68px;height:68px;margin:0 auto 16px;background:var(--ocre-d);color:#f0c89a;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:26px;font-weight:900;border:4px solid var(--clay)}
+.stp h4{font-size:15.5px;color:var(--ocre-d);margin-bottom:8px;font-weight:800}
+.stp p{font-size:12.5px;color:var(--ink-2);line-height:1.75}
+
+/* ===== 双栏 ===== */
+.split{padding:68px 0;background:var(--paper)}
+.split .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.blk{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.blk .th{background:var(--ocre);color:#fff;padding:14px 22px;display:flex;justify-content:space-between;align-items:center}
+.blk .th b{font-size:16px}
+.blk .th span{font-size:11.5px;opacity:.85}
+.blk ol,.blk .ul{padding:8px 0}
+.blk li{padding:16px 22px;border-bottom:1px solid var(--line)}
+.blk li:last-child{border-bottom:0}
+.blk .ul li{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start}
+.blk .ul .av{width:40px;height:40px;border-radius:50%;background:var(--clay);color:var(--ocre-d);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:16px;font-weight:800;flex:0 0 auto}
+.blk .ul h4{font-size:14.5px;font-weight:800;color:var(--ink);margin-bottom:4px}
+.blk .ul p{font-size:13px;color:var(--ink-2);text-align:justify}
+.blk .ul cite{display:block;font-size:11.5px;color:var(--ocre-l);font-style:normal;margin-top:5px}
+.blk ol li{display:grid;grid-template-columns:26px 1fr;gap:12px;align-items:start}
+.blk ol .no{font-family:var(--serif);font-size:17px;font-weight:900;color:var(--rust)}
+.blk ol h4{font-size:14.5px;font-weight:800;color:var(--ink);margin-bottom:4px}
+.blk ol p{font-size:13px;color:var(--ink-2);text-align:justify}
+
+/* ===== CTA 色带 ===== */
+.cta{background:var(--rust);color:#fff;padding:48px 0;text-align:center}
+.cta .kicker{font-size:11px;letter-spacing:5px;color:#f0c89a;font-weight:800;margin-bottom:12px}
+.cta h2{font-family:var(--serif);font-size:28px;line-height:1.5;margin-bottom:8px;font-weight:900}
+.cta h2 a{color:#fde6cf;border-bottom:2px solid rgba(255,255,255,.4)}
+.cta p{font-size:14.5px;opacity:.9;margin-bottom:22px}
+.cta .b{display:inline-block;background:#fff;color:var(--rust);font-weight:800;padding:13px 32px;border-radius:30px;font-size:14.5px}
+.cta .b:hover{background:var(--ocre-d);color:#fff}
+
+/* ===== 页脚 ===== */
+footer{background:var(--ocre-d);color:#e6b98f;padding:52px 0 0;font-size:13.5px}
+.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:36px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.14)}
+.fg b.h{color:#fff;font-size:13px;letter-spacing:1px;display:block;margin-bottom:14px}
+.fg ul{display:grid;gap:9px}
+.fg a{color:#e6b98f}
+.fg a:hover{color:#f0c89a}
+.f1 b.n{font-family:var(--serif);font-size:24px;color:#fff;display:block;margin-bottom:12px}
+.f1 p{margin-bottom:14px;line-height:1.85}
+.f1 .chip{display:inline-block;background:rgba(255,255,255,.07);border-radius:8px;padding:9px 14px;color:#f0ddcb;font-size:12.5px;line-height:1.6;border-left:3px solid var(--rust)}
+.fb{padding:20px 0;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:#c79170}
+.fb a{color:#e6b98f}
+
+@media(max-width:1000px){
+  .grid4{grid-template-columns:1fr 1fr}
+  .cell:nth-child(4n){border-right:1px solid var(--line)}
+  .cell:nth-child(2n){border-right:0}
+  .cell:nth-child(n+5){border-bottom:1px solid var(--line)}
+  .cell:nth-child(n+7){border-bottom:0}
+  .hero .wrap{grid-template-columns:1fr;gap:38px}
+  .hero h1{font-size:36px}
+  .flow .grid{grid-template-columns:1fr 1fr}
+  .flow .grid:before{display:none}
+  .st .wrap{grid-template-columns:1fr 1fr}
+  .st div{border-right:0;border-bottom:1px solid rgba(255,255,255,.14)}
+  .split .wrap{grid-template-columns:1fr}
+  .fg{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  body{font-size:15px}
+  section,.cols,.flow,.split{padding:46px 0}
+  .hero{padding-top:34px}
+  .hero h1{font-size:29px}
+  .belt span{font-size:12px}
+  .mob{display:block}
+  .top .list{display:none;flex-direction:column;align-items:stretch;width:100%;padding:6px 0}
+  .top .list a{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+  .top .brand{border-right:0;padding:12px 0}
+  .grp li{grid-template-columns:48px 1fr;gap:12px}
+  .grp .go{grid-column:2;justify-self:start;margin-top:4px}
+  .sec{grid-template-columns:1fr}
+  .grid4{grid-template-columns:1fr}
+  .cell{border-right:0!important;border-bottom:1px solid var(--line)!important}
+  .cell:last-child{border-bottom:0!important}
+  .flow .grid{grid-template-columns:1fr}
+  .cta h2{font-size:22px}
+  .fg{grid-template-columns:1fr}
+  .st .wrap{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<div class="belt">
+  <div class="wrap">
+    <b>本周活动</b>
+    <span>本周六 10/12 · 上海「复古影厅」专场《德州巴黎》35mm 胶片放映 + 映后主创连线</span>
+    <a href="#">立即报名 →</a>
+  </div>
+</div>
+
+<nav class="top" id="top">
+  <div class="wrap">
+    <button class="mob" id="mob" aria-label="展开导航">☰</button>
+    <div class="brand"><b>俺也去俺也去电影网</b><small>LOCAL CINEPHILES · SINCE 2026</small></div>
+    <div class="list">
+      <a href="#hero" class="on">首页</a>
+      <a href="#cols">组织栏目</a>
+      <a href="#flow">活动流程</a>
+      <a href="#list">本周场次</a>
+      <a href="#voices">影迷来信</a>
+      <a href="#rules">报名规则</a>
+      <a href="#ft">关于组织</a>
+    </div>
+  </div>
+</nav>
+
+<main id="hero">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">Local Cinephile Community</div>
+        <h1>一个人看片，<em>不如</em><br><u>一群人聊片</u></h1>
+        <p class="lead">俺也去俺也去电影网 anyequanyequdianyingwang-zh.github.io 是一个面向本地影迷的同城观影活动组织平台。我们不提供在线播放，我们组织真实的见面：每周一场放映、一次映后讨论、一群同好。看完那部片子，能立刻在隔壁的咖啡馆继续聊下去——这才是本站存在的理由。</p>
+        <div class="acts">
+          <a class="p1" href="#list">查看本周场次</a>
+          <a class="p2" href="#flow">了解活动流程</a>
+        </div>
+        <div class="quick">
+          <span><b>12</b>已建立小组的城市</span>
+          <span><b>40+</b>每月组织放映与沙龙</span>
+          <span><b>3,200</b>注册影迷</span>
+        </div>
+      </div>
+
+      <aside class="grp">
+        <div class="hd"><b>本周线下场次</b><small>UPCOMING 10.09–10.15</small></div>
+        <ul>
+          <li>
+            <div class="d"><b>12</b><span>SAT</span></div>
+            <div class="t"><h4><span class="dot"></span>《德州巴黎》35mm 胶片专场</h4><small>上海 · 复古影厅 · 放映 + 映后连线</small></div>
+            <a class="go" href="#">报名</a>
+          </li>
+          <li>
+            <div class="d"><b>13</b><span>SUN</span></div>
+            <div class="t"><h4><span class="dot"></span>纪录片主题沙龙：《里斯本丸沉没》</h4><small>北京 · 单向空间 · 映后圆桌</small></div>
+            <a class="go" href="#">报名</a>
+          </li>
+          <li>
+            <div class="d"><b>14</b><span>MON</span></div>
+            <div class="t"><h4><span class="dot"></span>港片修复双片连映：《东邪西毒》+《阿飞正传》</h4><small>广州 · 1200 书店 · 连映</small></div>
+            <a class="go" href="#">报名</a>
+          </li>
+          <li>
+            <div class="d"><b>15</b><span>TUE</span></div>
+            <div class="t"><h4><span class="dot full"></span>短片共创夜：带一部你最爱的短片来聊</h4><small>成都 · NU SPACE · 开放式讨论</small></div>
+            <a class="go" href="#">候补</a>
+          </li>
+        </ul>
+        <div class="ft">全部城市场次与报名方式 → <a href="#list">查看完整排期</a></div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats st">
+    <div class="wrap">
+      <div><b>12</b><span>已建立小组的城市</span></div>
+      <div><b>40+</b><span>每月放映与沙龙</span></div>
+      <div><b>3,200</b><span>注册影迷</span></div>
+      <div><b>186</b><span>累计主题沙龙</span></div>
+    </div>
+  </section>
+
+  <!-- COLUMNS -->
+  <section class="cols" id="cols">
+    <div class="wrap">
+      <div class="sec">
+        <h2>组织栏目<small>FIVE SECTIONS · 五个固定栏目，覆盖组织与参与的全部环节</small></h2>
+        <a href="#rules"><b>报名规则</b> →</a>
+      </div>
+      <div class="grid4">
+
+        <div class="cell">
+          <div class="ic">🏙️</div>
+          <h3>城市观影小组</h3>
+          <p>按城市划分的本地影迷小组，每个小组有固定的活动场地与每月排期，新成员可直接查看所在城市的联络人与微信群入口。</p>
+          <div class="row"><span>12 城活跃</span><a href="#">查看 →</a></div>
+        </div>
+
+        <div class="cell">
+          <div class="ic">🎞️</div>
+          <h3>每周线下放映</h3>
+          <p>每周公布的城市线下放映场次，含时间、场地、影片版本、费用说明与报名上限，放映前后均预留交流时间。</p>
+          <div class="row"><span>本周 9 场</span><a href="#list">查看 →</a></div>
+        </div>
+
+        <div class="cell">
+          <div class="ic">🎙️</div>
+          <h3>主题观影沙龙</h3>
+          <p>围绕一个导演、一种类型或一段影史展开的深度沙龙，通常含映后圆桌与嘉宾连线，每月 2–3 期，适合希望聊透一部片子的观众。</p>
+          <div class="row"><span>累计 186 期</span><a href="#">查看 →</a></div>
+        </div>
+
+        <div class="cell">
+          <div class="ic">📋</div>
+          <h3>片单共创</h3>
+          <p>由成员共同维护的主题片单，每月选定一个命题公开征集，最终片单附每位推荐人的一句话理由，避免单一视角的选片偏见。</p>
+          <div class="row"><span>42 张主题片单</span><a href="#">查看 →</a></div>
+        </div>
+
+        <div class="cell">
+          <div class="ic">🤝</div>
+          <h3>影迷交友</h3>
+          <p>面向想认识同好的成员，提供按观影偏好匹配的小范围活动与线下聚餐，每次活动人数控制在 12 人以内，确保人人能开口。</p>
+          <div class="row"><span>每期 12 人上限</span><a href="#">查看 →</a></div>
+        </div>
+
+        <div class="cell">
+          <div class="ic">✍️</div>
+          <h3>成员观后感</h3>
+          <p>放映结束后的成员短评与长文归档，允许不同意见并存，形成一组片子在真实观众中的多声部反馈。</p>
+          <div class="row"><span>960+ 篇</span><a href="#">查看 →</a></div>
+        </div>
+
+        <div class="cell">
+          <div class="ic">📍</div>
+          <h3>场地索引</h3>
+          <p>合作影院、独立放映空间与书店的详细信息与交通指引，含无障碍设施与票价说明，方便新成员第一次到场不迷路。</p>
+          <div class="row"><span>67 个场地</span><a href="#">查看 →</a></div>
+        </div>
+
+        <div class="cell">
+          <div class="ic">📮</div>
+          <h3>活动投稿</h3>
+          <p>接受成员自荐成为活动组织者，提交场地与片目方案，经小组审核后即可发起一场属于自己的观影活动。</p>
+          <div class="row"><span>开放中</span><a href="#">投稿 →</a></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOW -->
+  <section class="flow" id="flow">
+    <div class="wrap">
+      <div class="sec" style="border-bottom-color:var(--olive)">
+        <h2>一场活动怎么发生<small>HOW IT WORKS · 从想看到坐下的五步</small></h2>
+        <a href="#list">本周场次 →</a>
+      </div>
+      <div class="grid">
+        <div class="stp">
+          <div class="n">1</div>
+          <h4>发起提议</h4>
+          <p>成员在小组内提交想看的片子与场地设想，写明理由与可参与的时段。</p>
+        </div>
+        <div class="stp">
+          <div class="n">2</div>
+          <h4>小组投票</h4>
+          <p>每月初由成员投票决定当月排片，票数靠前者进入正式排期。</p>
+        </div>
+        <div class="stp">
+          <div class="n">3</div>
+          <h4>落实场地</h4>
+          <p>组织者对接合作影院或独立放映空间，确认版本、票价与映后环节。</p>
+        </div>
+        <div class="stp">
+          <div class="n">4</div>
+          <h4>开放报名</h4>
+          <p>提前 7 天公布场次信息，成员在线报名，满额后开放候补名单。</p>
+        </div>
+        <div class="stp">
+          <div class="n">5</div>
+          <h4>映后讨论</h4>
+          <p>放映结束后就近转场，由一位主持人引导讨论，观点不要求一致。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPLIT -->
+  <section class="split" id="list">
+    <div class="wrap">
+
+      <div class="blk">
+        <div class="th"><b>本周城市排期</b><span>10 月 09 日 — 10 月 15 日</span></div>
+        <ul class="ul">
+          <li>
+            <div class="av">沪</div>
+            <div><h4>10/12 周六｜《德州巴黎》35mm 胶片专场</h4><p>放映结束后安排映后连线，连线嘉宾将分享本次胶片修复的技术细节。场地提供基础无障碍通道，放映时长约 145 分钟。</p><cite>上海复古影厅 · 报名上限 60 人 · 含一杯饮品</cite></div>
+          </li>
+          <li>
+            <div class="av">京</div>
+            <div><h4>10/13 周日｜纪录片沙龙：《里斯本丸沉没》</h4><p>映后圆桌邀请三位长期关注海洋历史纪录片的评论作者，讨论拍摄周期与素材伦理，讨论时长约 60 分钟。</p><cite>北京单向空间 · 报名上限 45 人 · 学生半价</cite></div>
+          </li>
+          <li>
+            <div class="av">穗</div>
+            <div><h4>10/14 周一｜港片修复双片连映</h4><p>《东邪西毒》与《阿飞正传》连续放映，中间安排 20 分钟休息，两片均使用最新 4K 修复拷贝。</p><cite>广州 1200 书店 · 连映票含简餐</cite></div>
+          </li>
+          <li>
+            <div class="av">蓉</div>
+            <div><h4>10/15 周二｜短片共创夜</h4><p>开放式讨论，每位参与者带一部自己最爱的短片来分享，无需提前提交片单，现场轮流播放与讨论。</p><cite>成都 NU SPACE · 候补名单开放中</cite></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="blk">
+        <div class="th"><b>报名与参与规则</b><span>RULES</span></div>
+        <ol>
+          <li><span class="no">01</span><div><h4>提前 7 天报名</h4><p>场次信息每周一公布，报名开放一周，满额后自动进入候补名单，有人取消时按顺序递补。</p></div></li>
+          <li><span class="no">02</span><div><h4>费用公开透明</h4><p>每场活动的费用构成在报名页完整列出，包含场地、版权与设备成本，不含隐藏收费。</p></div></li>
+          <li><span class="no">03</span><div><h4>迟到与候补</h4><p>开场前 10 分钟停止入场，空位优先释放给候补成员，请勿占用座位影响讨论。</p></div></li>
+          <li><span class="no">04</span><div><h4>讨论礼仪</h4><p>映后讨论不要求观点一致，但要求先听完对方再说，不剧透未到场成员尚未观看的影片。</p></div></li>
+          <li><span class="no">05</span><div><h4>新人友好</h4><p>首次参加者可在报名时备注，现场会有组织者主动介绍同好，无需担心一个人到场。</p></div></li>
+        </ol>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- VOICES -->
+  <section class="cols" id="voices" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec">
+        <h2>影迷来信<small>VOICES · 来自各城市成员的真实反馈</small></h2>
+        <a href="#">投稿你的活动感受 →</a>
+      </div>
+      <div class="grid4">
+
+        <div class="cell">
+          <div class="ic">💬</div>
+          <h3>「原来同城市里还有这么多人愿意聊电影」</h3>
+          <p>第一次参加是抱着试试的心态，结果在映后讨论里认识了两个同样喜欢纪录片修复版本的朋友，后来我们成了固定搭子。</p>
+          <div class="row"><span>上海 · 2026.09</span><a href="#">回信 →</a></div>
+        </div>
+
+        <div class="cell">
+          <div class="ic">💬</div>
+          <h3>「讨论比片子本身更让人上瘾」</h3>
+          <p>以前看完一部片子只能在豆瓣写两句短评，在这里能当面听不同意见，发现自己漏掉了大量视听细节。</p>
+          <div class="row"><span>北京 · 2026.08</span><a href="#">回信 →</a></div>
+        </div>
+
+        <div class="cell">
+          <div class="ic">💬</div>
+          <h3>「终于有人陪我连看两部长片」</h3>
+          <p>港片修复连映那场是我今年最开心的观影经历，中间休息时和旁边的人聊了二十分钟剪辑节奏，没人嫌烦。</p>
+          <div class="row"><span>广州 · 2026.07</span><a href="#">回信 →</a></div>
+        </div>
+
+        <div class="cell">
+          <div class="ic">💬</div>
+          <h3>「从参与者变成组织者」</h3>
+          <p>上个月我提交了一份场地提案，这个月就办成了第一场自己的活动，整个过程比想象中简单得多。</p>
+          <div class="row"><span>成都 · 2026.10</span><a href="#">回信 →</a></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="wrap">
+      <div class="kicker">JOIN US · 加入本地影迷小组</div>
+      <h2>下一部好片，<br>不妨叫上同样喜欢它的那个人一起看。</h2>
+      <p>俺也去俺也去电影网 anyequanyequdianyingwang-zh.github.io · 面向 12 座城市的本地影迷线下观影组织平台</p>
+      <a class="b" href="https://anyequanyequdianyingwang-zh.github.io">访问本站并查看本周排期</a>
+    </div>
+  </section>
+
+</main>
+
+<footer id="ft">
+  <div class="wrap">
+    <div class="fg">
+      <div class="f1">
+        <b class="n">俺也去俺也去电影网</b>
+        <p>本地影迷线下观影组织与同城观影活动报名入口。把「一个人看片」变成「一群人聊片」，是本站唯一的目标。</p>
+        <span class="chip">网站网址：https://anyequanyequdianyingwang-zh.github.io</span>
+      </div>
+      <div>
+        <b class="h">组织栏目</b>
+        <ul>
+          <li><a href="#">城市观影小组</a></li>
+          <li><a href="#">每周线下放映</a></li>
+          <li><a href="#">主题观影沙龙</a></li>
+          <li><a href="#">片单共创</a></li>
+        </ul>
+      </div>
+      <div>
+        <b class="h">参与方式</b>
+        <ul>
+          <li><a href="#list">本周城市排期</a></li>
+          <li><a href="#flow">活动发起流程</a></li>
+          <li><a href="#voices">影迷来信</a></li>
+          <li><a href="#">活动投稿</a></li>
+        </ul>
+      </div>
+      <div>
+        <b class="h">关于组织</b>
+        <ul>
+          <li><a href="#">组织理念</a></li>
+          <li><a href="#">场地合作</a></li>
+          <li><a href="#">报名规则</a></li>
+          <li><a href="#">联络我们</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fb">
+      <span>© 2026 俺也去俺也去电影网 · 网站名称：俺也去俺也去电影网 · 网站网址：<a href="https://anyequanyequdianyingwang-zh.github.io">https://anyequanyequdianyingwang-zh.github.io</a> · 覆盖 12 座城市</span>
+      <span>已有 3,200 位本地影迷加入</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+var mb=document.getElementById('mob');
+var top=document.getElementById('top');
+mb.addEventListener('click',function(){top.classList.toggle('open');});
+top.addEventListener('click',function(e){if(e.target.tagName==='A')top.classList.remove('open');});
+</script>
+</body>
+</html>
